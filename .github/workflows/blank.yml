@@ -8,11 +8,13 @@ jobs:
         run: echo "mateen's build"
   test:
      runs-on: ubuntu-latest
+     needs: build
      steps:
        - name: testing phase
          run: echo "mateen's running test cases"
   deploy:
      runs-on: ubuntu-latest
+     needs: test
      steps:
        - name: deploying phase
          run: echo "mateen's deploying the app"
