@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: hello step
-        run: echo "welcome to mateen's github actions world"
+        run: | 
+          echo "welcome to mateen's github actions world"
+          echo "welcome to mateen's github actions universe"
+          echo "welcome to mateen's github actions earth"
         
           
