@@ -1,0 +1,10 @@
+name: Hello mateen
+on: workflow_dispatch
+jobs: 
+  hello:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: hello step
+        run: echo "welcome to mateen's github actions world"
+        
+          
